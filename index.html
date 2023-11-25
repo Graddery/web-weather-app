@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon120.png" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=18107344-d217-4e86-8c6d-8786e11551c8&lang=ru_RU" type="text/javascript">
+    </script>
+    <title>Weather app</title>
+</head>
+<body>
+    
+    <main class="main-section">
+        <section class="info-about-weather">
+            <form class="info-about-weather__form">
+                <p class="info-about-weather__article">Введите интересующие вас координаты</p>
+                <input class="info-about-weather__input" id="inputLat" type="text" placeholder="Широта">
+                <input class="info-about-weather__input" id="inputLon" type="text" placeholder="Долгота">
+                <button class="info-about-weather__btn" id="btn">Показать погоду</button>
+            </form>
+        </section>
+        <section class="weather-map">
+            <div id="map" class="map"></div>
+        </section>
+    </main>
+    <script src="./scripts/weather-app.js"></script>
+</body>
+</html>
